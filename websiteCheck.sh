@@ -1,16 +1,19 @@
 #!/bin/bash
 
-# Defining key values pairs where key = website & values =0
+# Defining key values pairs where key = website & values =0 (i.e. failure_count)
 declare -A website_dict
 website_dict["https://www.google.com"]=0
 website_dict["https://ai-champion-tracker.framer.ai/"]=0
 website_dict["https://www.facebook.com"]=0
 
 # Email configuration/function
+#Pending
 
 # temporary just for testing
 down_file="/home/ashish/OP/extras/Assignments/down_websites.txt"
 current_datetime=$(date +"%Y-%m-%d %H:%M:%S")
+
+
 # Function to check websites
 check_websites() {
     for website in "${!website_dict[@]}"; do
