@@ -30,5 +30,5 @@ check_websites() {
 
 while true; do
     check_websites
-    sleep 5
+    sleep 600
 done
